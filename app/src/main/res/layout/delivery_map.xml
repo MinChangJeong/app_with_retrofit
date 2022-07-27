@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/map_top_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/header"
+            android:gravity="center"
+            android:text="배송 지도"
+            android:textColor="@android:color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/map_ic_scan"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="355dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_scan" />
+
+        <!--네이버 지도 api 받아와서 여기에 지정-->
+        <!--    <FrameLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="0px"-->
+        <!--        android:layout_weight="14">-->
+
+
+        <!--        <fragment-->
+        <!--            android:id="@+id/map"-->
+        <!--            android:name="com.naver.maps.map.MapFragment"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent" />-->
+
+        <!--    </FrameLayout>-->
+
+
+        <TextView
+            android:id="@+id/delivery_map_contents_delivery"
+            android:layout_width="20dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="320dp"
+            android:text="배송"
+            android:textAppearance="@style/map_delivery" />
+
+        <TextView
+            android:id="@+id/delivery_map_contents_comple"
+            android:layout_width="20dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="320dp"
+            android:text="완료"
+            android:textAppearance="@style/map_delivery2" />
+
+        <TextView
+            android:id="@+id/delivery_map_contents_wrong"
+            android:layout_width="70dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="320dp"
+            android:text="오배송/분실/파손"
+            android:textAppearance="@style/map_delivery2" />
+
+        <TextView
+            android:id="@+id/subname1"
+            android:layout_width="54dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="350dp"
+            android:text="미완료"
+            android:textAppearance="@style/수취방법"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/delivery_map_incomple_name"
+            android:layout_width="34dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="390dp"
+            android:gravity="center_horizontal|top"
+            android:text="고객명"
+            android:textAppearance="@style/배송완료_상세" />
+
+        <TextView
+            android:id="@+id/delivery_map_incomple_address"
+            android:layout_width="50dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="390dp"
+            android:gravity="center_horizontal|top"
+            android:text="상세주소"
+            android:textAppearance="@style/배송완료_상세" />
+
+        <TextView
+            android:id="@+id/delivery_map_incomple_delivery"
+            android:layout_width="50dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="390dp"
+            android:gravity="center_horizontal|top"
+            android:text="배송"
+            android:textAppearance="@style/배송완료_상세" />
+
+        <View
+            android:id="@+id/delivery_map_line1"
+            android:layout_width="411dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="410dp"
+            android:background="@drawable/line" />
+
+        <ListView
+            android:id="@+id/listview1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="410dp"
+            android:fastScrollEnabled="true" />
+
+        <TextView
+            android:id="@+id/subname2"
+            android:layout_width="54dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="610dp"
+            android:text="배송완료"
+            android:textAppearance="@style/수취방법"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/delivery_map_comple_name"
+            android:layout_width="34dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="650dp"
+            android:gravity="center_horizontal|top"
+            android:text="고객명"
+            android:textAppearance="@style/배송완료_상세" />
+
+        <View
+            android:id="@+id/delivery_map_line2"
+            android:layout_width="411dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="595dp"
+            android:background="@drawable/contour_line" />
+
+        <TextView
+            android:id="@+id/delivery_map_comple_address"
+            android:layout_width="50dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="650dp"
+            android:gravity="center_horizontal|top"
+            android:text="상세주소"
+            android:textAppearance="@style/배송완료_상세" />
+
+        <TextView
+            android:id="@+id/delivery_map_comple_delivery"
+            android:layout_width="50dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="650dp"
+            android:gravity="center_horizontal|top"
+            android:text="배송"
+            android:textAppearance="@style/배송완료_상세" />
+
+        <View
+            android:id="@+id/delivery_map_line3"
+            android:layout_width="411dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="670dp"
+            android:background="@drawable/line" />
+
+        <ListView
+            android:id="@+id/listview2"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="670dp"
+            android:fastScrollEnabled = "true"/>
+
+    </FrameLayout>
+</ScrollView>

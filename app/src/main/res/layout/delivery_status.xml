@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/top_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/header"
+            android:gravity="center"
+            android:text="배송현황"
+            android:textColor="@android:color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ic_glass"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="325dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_glass" />
+
+        <Button
+            android:id="@+id/ic_scan"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="355dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_scan" />
+
+
+        <TextView
+            android:id="@+id/completionlist_name"
+            android:layout_width="34dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center_horizontal|top"
+            android:text="고객명"
+            android:textAppearance="@style/배송완료_상세" />
+
+        <TextView
+            android:id="@+id/completionlist_address"
+            android:layout_width="50dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center_horizontal|top"
+            android:text="상세주소"
+            android:textAppearance="@style/배송완료_상세" />
+
+        <TextView
+            android:id="@+id/completionlist_delivery"
+            android:layout_width="50dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center_horizontal|top"
+            android:text="배송"
+            android:textAppearance="@style/배송완료_상세" />
+
+        <TextView
+            android:id="@+id/completionlist_Progress"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center_horizontal|top"
+            android:text="진행현황"
+            android:textAppearance="@style/배송완료_상세" />
+
+        <TextView
+            android:id="@+id/subname1"
+            android:layout_width="54dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center_horizontal|top"
+            android:text="배송완료"
+            android:textAppearance="@style/수취방법"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/countour_line"
+            android:layout_width="411dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="330dp"
+            android:background="@drawable/contour_line" />
+
+        <TextView
+            android:id="@+id/subname2"
+            android:layout_width="45dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="350dp"
+            android:gravity="center_horizontal|top"
+            android:text="미완료"
+            android:textAppearance="@style/수취방법"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Incomplete_name"
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="380dp"
+            android:gravity="center_horizontal|top"
+            android:text="고객명"
+            android:textAppearance="@style/배송완료_상세" />
+
+        <TextView
+            android:id="@+id/Incomplete_address"
+            android:layout_width="50dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="380dp"
+            android:gravity="center_horizontal|top"
+            android:text="상세주소"
+            android:textAppearance="@style/배송완료_상세" />
+
+        <TextView
+            android:id="@+id/Incomplete_dlivery"
+            android:layout_width="50dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="380dp"
+            android:gravity="center_horizontal|top"
+            android:text="배송"
+            android:textAppearance="@style/배송완료_상세" />
+
+        <TextView
+            android:id="@+id/Incomplete_progress"
+            android:layout_width="50dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="380dp"
+            android:gravity="center_horizontal|top"
+            android:text="진행현황"
+            android:textAppearance="@style/배송완료_상세" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="411dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/line" />
+
+        <ScrollView
+            android:id="@+id/dliveryStatus_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="140dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/dliveryStatus_scroll2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="400dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+
+    </FrameLayout>
+
+</FrameLayout>
